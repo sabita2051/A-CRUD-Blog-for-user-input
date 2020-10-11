@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>This is a article delete page.</h1>
+
+<form action="" method="POST">
+	
+	{% csrf_token %}
+
+	<h3>WARNING!!!</h3>
+	<p>Are you sure that you want to delete: {{batwomen.title}}</p>
+
+	
+		
+	<input type="submit" value="confirm">
+
+</form>
+
+{% endblock content %}
